@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+      
+    
+        <link rel="stylesheet" href="themes/sleep_css.min.css" />
+        <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+        
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+        <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+        <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+      
+        <script >
+        $(document).on("pagecreate","#index", function(){ 
+            $("#survey").click(function() {
+                $("#p").popup("open"); 
+            });
+        });
+        </script>
+    </head>
+    <body >
+        <div data-role="page" id="index">
+            <div  class="ui-body ui-body-a ui-corner-all">
+                
+                    <H3>Cognitive Test</H3>
+                    <div  >
+                        <p>Memory</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In fringilla risus proin congue rhoncus sapien orci.</p>
+                    </div>
+                
+            </div>
+            <div  id="survey" class="ui-body ui-body-a ui-corner-all">
+                
+                <H3>Sleep Survey 3 </H3>
+                <div  >
+                    <p>5 questions</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In fringilla risus proin congue rhoncus sapien orci.</p>
+                </div>
+            </div>
+            <div class="ui-body">
+                
+                <H3>Completed </H3>
+                
+            </div>
+
+            <div class="ui-body ui-body-a  ui-corner-all ui-disabled">
+                
+                <H3>Sleep Survey 3 </H3>
+                <div  >
+                    <p>5 questions</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In fringilla risus proin congue rhoncus sapien orci.</p>
+                </div>
+            
+            </div>
+            <div id="p" data-role="popup"  class="ui-content" data-dissmisible="false">
+                <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-left">close</a>
+                    <p> Sleep Survey 3</p>
+                    <form>
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="male">Male</label><br>
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Female</label><br>
+                        <input type="radio" id="other" name="gender" value="other">
+                        <label for="other">Other</label>
+                    </form>
+            </div>
+        
+    
+            <div data-role="footer" data-position="fixed" class="ui-footer">
+                    
+                <div data-role="navbar" class="ui-navbar" >
+                    <ul>
+                        <li><a href="a" data-icon="user"></a></li>
+                        <li><a href="a" data-icon="home"></a></li>
+                        <li><a href="a" data-icon="gear"></a></li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </body>
+    
+</html>
